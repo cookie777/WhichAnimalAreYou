@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		481E4C462589D79200EA4BC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E4C452589D79200EA4BC4 /* AppDelegate.swift */; };
 		481E4C482589D79200EA4BC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E4C472589D79200EA4BC4 /* SceneDelegate.swift */; };
-		481E4C4A2589D79200EA4BC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E4C492589D79200EA4BC4 /* ViewController.swift */; };
+		481E4C4A2589D79200EA4BC4 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E4C492589D79200EA4BC4 /* IntroductionViewController.swift */; };
 		481E4C4F2589D79300EA4BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481E4C4E2589D79300EA4BC4 /* Assets.xcassets */; };
 		481E4C522589D79300EA4BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481E4C502589D79300EA4BC4 /* LaunchScreen.storyboard */; };
+		481E4C5D2589EC7700EA4BC4 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E4C5C2589EC7700EA4BC4 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		481E4C422589D79200EA4BC4 /* WhichAnimalAreYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichAnimalAreYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481E4C452589D79200EA4BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481E4C472589D79200EA4BC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		481E4C492589D79200EA4BC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		481E4C492589D79200EA4BC4 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		481E4C4E2589D79300EA4BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		481E4C512589D79300EA4BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		481E4C532589D79300EA4BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481E4C5C2589EC7700EA4BC4 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				481E4C452589D79200EA4BC4 /* AppDelegate.swift */,
 				481E4C472589D79200EA4BC4 /* SceneDelegate.swift */,
-				481E4C492589D79200EA4BC4 /* ViewController.swift */,
+				481E4C492589D79200EA4BC4 /* IntroductionViewController.swift */,
+				481E4C5C2589EC7700EA4BC4 /* QuestionViewController.swift */,
 				481E4C4E2589D79300EA4BC4 /* Assets.xcassets */,
 				481E4C502589D79300EA4BC4 /* LaunchScreen.storyboard */,
 				481E4C532589D79300EA4BC4 /* Info.plist */,
@@ -133,8 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481E4C4A2589D79200EA4BC4 /* ViewController.swift in Sources */,
+				481E4C4A2589D79200EA4BC4 /* IntroductionViewController.swift in Sources */,
 				481E4C462589D79200EA4BC4 /* AppDelegate.swift in Sources */,
+				481E4C5D2589EC7700EA4BC4 /* QuestionViewController.swift in Sources */,
 				481E4C482589D79200EA4BC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
