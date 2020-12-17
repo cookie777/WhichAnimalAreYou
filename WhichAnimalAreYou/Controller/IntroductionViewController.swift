@@ -28,6 +28,7 @@ class IntroductionViewController: UIViewController {
     bt.setTitleColor(.systemBlue, for: .normal)
     bt.setTitleColor(.systemTeal   , for: .highlighted)
     bt.titleLabel?.font = .systemFont(ofSize: 15)
+    bt.addTarget(self, action: #selector(startButtonPressed), for: .touchUpInside)
     return bt
   }()
   
@@ -107,8 +108,11 @@ class IntroductionViewController: UIViewController {
     rabbitEmoji.trailingAnchor.constraint(lessThanOrEqualTo: turtleEmoji.leadingAnchor).isActive = true
   }
   
+  @objc func startButtonPressed(){
+    let nv = UINavigationController(rootViewController: QuestionViewController())
+    self.present(nv, animated: true, completion: nil)
+  }
   
-
 
 }
 
