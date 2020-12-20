@@ -78,19 +78,20 @@ class IntroductionViewController: UIViewController {
     return lb
   }
   
-  func setEmojiConstrain(lb: UILabel,top t: CGFloat?,right r: CGFloat?,bottom b: CGFloat?, left l: CGFloat?){
+  func setEmojiConstrain(lb: UILabel,top t: CGFloat? = nil,right r: CGFloat? = nil ,bottom b: CGFloat? = nil , left l: CGFloat? = nil){
     view.addSubview(lb)
+    let safeArea = view.safeAreaLayoutGuide
     if let t = t{
-      lb.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: t).isActive = true
+      lb.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: t).isActive = true
     }
     if let r = r{
-      lb.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: r).isActive = true
+      lb.rightAnchor.constraint(equalTo: safeArea.rightAnchor, constant: r).isActive = true
     }
     if let b = b{
-      lb.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: b).isActive = true
+      lb.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: b).isActive = true
     }
     if let l = l{
-      lb.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: l).isActive = true
+      lb.leftAnchor.constraint(equalTo: safeArea.leftAnchor, constant: l).isActive = true
     }
   }
   
@@ -99,10 +100,11 @@ class IntroductionViewController: UIViewController {
     let catEmoji = createEmjoiLabel(str: "🐱")
     let rabbitEmoji = createEmjoiLabel(str: "🐰")
     let turtleEmoji = createEmjoiLabel(str: "🐢")
-    setEmojiConstrain(lb: dogEmoji, top: 0, right: nil, bottom: nil, left: 20)
-    setEmojiConstrain(lb: catEmoji, top: 0, right: -20, bottom: nil, left: nil)
-    setEmojiConstrain(lb: rabbitEmoji, top: nil, right: nil, bottom: 0, left: 20)
-    setEmojiConstrain(lb: turtleEmoji, top: nil, right: -20, bottom: 0, left: nil)
+    setEmojiConstrain(lb: dogEmoji, top: 0, left: 20)
+    setEmojiConstrain(lb: catEmoji, top: 0, right: -20)
+    setEmojiConstrain(lb: rabbitEmoji, bottom: 0, left: 20)
+    setEmojiConstrain(lb: turtleEmoji, right: -20, bottom: 0)
+    
     
     dogEmoji.trailingAnchor.constraint(lessThanOrEqualTo: catEmoji.leadingAnchor).isActive = true
     rabbitEmoji.trailingAnchor.constraint(lessThanOrEqualTo: turtleEmoji.leadingAnchor).isActive = true
