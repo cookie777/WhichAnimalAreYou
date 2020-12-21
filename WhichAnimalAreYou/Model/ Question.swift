@@ -75,3 +75,10 @@ var questions: [Question] = [
     ]
   )
 ]
+
+func calculatePersonalityResult(responses: [Answer])-> AnimalType{
+    let frequencyOfAnswers = responses.reduce(into: [:]){
+        $0[$1.type, default: 0] += 1
+    }
+    return frequencyOfAnswers.sorted{$0.value > $1.value}.first!.key
+}
