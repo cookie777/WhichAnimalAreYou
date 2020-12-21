@@ -41,9 +41,7 @@ class MultiAnswerView: UIView {
         }
         return sv
     }()
-//    lazy var pairs  = Array(repeating: 0, count: 4).map { i in
-//        HorizontalStackView(arrangedSubviews: [lables[i],switches[i]])
-//    }
+
     var answerButton =  LinkButton(text: "Submit button")
   
     lazy var stackView = VerticalStackView(arrangedSubviews: pairs+[answerButton], spacing: 20)
