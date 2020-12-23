@@ -12,7 +12,7 @@ class LinkButton: UIButton {
     init(text : String = "") {
         super.init(frame: .zero)
         self.setTitle     (text , for: .normal)
-        self.setTitleColor(.systemBlue, for: .normal)
+        self.setTitleColor(.systemGreen, for: .normal)
         self.setTitleColor(.systemTeal    , for: .highlighted)
         self.titleLabel?.font = .systemFont(ofSize: 16)
     }
