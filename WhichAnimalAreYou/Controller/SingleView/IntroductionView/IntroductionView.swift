@@ -10,7 +10,7 @@ import UIKit
 class IntroductionView: UIView {
 
     
-    var view : UIView!{
+    weak var view : UIView!{
         didSet{
             setCenterLabel()
             setEmoji()
@@ -21,7 +21,8 @@ class IntroductionView: UIView {
     /*
      MARK: - Set layout of center label
     */
-    var titleLabel  = CustomUILabel( text: "Which anima are you?", fontSize: 32, fontFamily: "Georgia")
+    //    var titleLabel  = CustomUILabel( text: "Which anima are you?", fontSize: 32, fontFamily: "Georgia")
+    var titleLabel  = LargeLabel( text: "Which animal are you?")
     var startButton = LinkButton(text: "Begin Personality Quiz")
   
     lazy var mainStackView : UIStackView = VerticalStackView(arrangedSubviews: [titleLabel, startButton], spacing: 0, alignment: .center)
