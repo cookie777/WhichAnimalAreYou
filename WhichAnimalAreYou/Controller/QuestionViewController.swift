@@ -18,7 +18,7 @@ class QuestionViewController: UIViewController {
     var answerChosen: [Answer] = []
   
  
-    var genericAnswerView = GenericAnswerView()
+    var commonQuestionView = CommonQeustionView()
     var singleAnswerView = SingleAnswerView()
     var multiAnswerView = MultiAnswerView()
     var rangedAnswerView = RangedAnswerView()
@@ -32,7 +32,7 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
 
-        genericAnswerView.view = view
+        commonQuestionView.view = view
         
         singleAnswerView.view = view
         singleAnswerView.buttons.forEach {$0.addTarget(self, action: #selector(singleAnswerBottonPressed), for: .touchUpInside)}
@@ -60,8 +60,8 @@ class QuestionViewController: UIViewController {
         let totalProgress = Float(questionIndex) / Float(questions.count)
 
         navigationItem.title = "Question \(questionIndex + 1)"
-        genericAnswerView.questionLable.text = currentQuestion.text
-        genericAnswerView.qeustionProgress.setProgress(totalProgress, animated: true)
+        commonQuestionView.questionLable.text = currentQuestion.text
+        commonQuestionView.qeustionProgress.setProgress(totalProgress, animated: true)
 
         switch currentQuestion.type {
             case .single:

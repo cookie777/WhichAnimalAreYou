@@ -28,7 +28,7 @@
 		486852182590135B007069A3 /* SingleAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486852172590135B007069A3 /* SingleAnswerView.swift */; };
 		4868521E2590141A007069A3 /* MultiAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868521D2590141A007069A3 /* MultiAnswerView.swift */; };
 		4868522125901428007069A3 /* RangedAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4868522025901428007069A3 /* RangedAnswerView.swift */; };
-		48685226259040BF007069A3 /* GenericAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48685225259040BF007069A3 /* GenericAnswerView.swift */; };
+		48685226259040BF007069A3 /* CommonQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48685225259040BF007069A3 /* CommonQuestionView.swift */; };
 		488145DC258AD876003BDA02 /*  Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488145DB258AD876003BDA02 /*  Question.swift */; };
 		48BC01B5258EF15D005C213D /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC01B4258EF15D005C213D /* IntroductionView.swift */; };
 		48D27DF62591459D0093CAA8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D27DF52591459D0093CAA8 /* ResultView.swift */; };
@@ -61,7 +61,7 @@
 		486852172590135B007069A3 /* SingleAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnswerView.swift; sourceTree = "<group>"; };
 		4868521D2590141A007069A3 /* MultiAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAnswerView.swift; sourceTree = "<group>"; };
 		4868522025901428007069A3 /* RangedAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedAnswerView.swift; sourceTree = "<group>"; };
-		48685225259040BF007069A3 /* GenericAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAnswerView.swift; sourceTree = "<group>"; };
+		48685225259040BF007069A3 /* CommonQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonQuestionView.swift; sourceTree = "<group>"; };
 		488145DB258AD876003BDA02 /*  Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Question.swift"; sourceTree = "<group>"; };
 		48BC01B4258EF15D005C213D /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		48D27DF52591459D0093CAA8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		4868522B259043F7007069A3 /* QuestionView */ = {
 			isa = PBXGroup;
 			children = (
-				48685225259040BF007069A3 /* GenericAnswerView.swift */,
+				48685225259040BF007069A3 /* CommonQuestionView.swift */,
 				486852172590135B007069A3 /* SingleAnswerView.swift */,
 				4868521D2590141A007069A3 /* MultiAnswerView.swift */,
 				4868522025901428007069A3 /* RangedAnswerView.swift */,
@@ -335,7 +335,7 @@
 				481E4C5D2589EC7700EA4BC4 /* QuestionViewController.swift in Sources */,
 				48D27DF62591459D0093CAA8 /* ResultView.swift in Sources */,
 				481E4C482589D79200EA4BC4 /* SceneDelegate.swift in Sources */,
-				48685226259040BF007069A3 /* GenericAnswerView.swift in Sources */,
+				48685226259040BF007069A3 /* CommonQuestionView.swift in Sources */,
 				48685208258F499F007069A3 /* UIEdgeInsetsnilAcceptable.swift in Sources */,
 				488145DC258AD876003BDA02 /*  Question.swift in Sources */,
 				486851F4258F1F32007069A3 /* UIView+ConstraintLayout.swift in Sources */,

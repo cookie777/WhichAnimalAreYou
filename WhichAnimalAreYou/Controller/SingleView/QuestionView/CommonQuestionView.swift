@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GenericAnswerView: UIView {
+class CommonQeustionView: UIView {
     
     weak var view : UIView!{
         didSet{
