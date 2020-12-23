@@ -14,7 +14,7 @@ class LinkButton: UIButton {
         self.setTitle     (text , for: .normal)
         self.setTitleColor(.systemBlue, for: .normal)
         self.setTitleColor(.systemTeal    , for: .highlighted)
-        self.titleLabel?.font = .systemFont(ofSize: 16)
+        self.titleLabel?.font =  UIFont(name: "Inter-Regular", size: 16)
     }
     
     required init?(coder: NSCoder) {

@@ -9,7 +9,7 @@ import UIKit
 
 class GenericAnswerView: UIView {
     
-    var view : UIView!{
+    weak var view : UIView!{
         didSet{
             setConstrains()
         }
@@ -26,6 +26,7 @@ class GenericAnswerView: UIView {
         pv.translatesAutoresizingMaskIntoConstraints = false
         return pv
     }()
+    
     
     /*
     MARK: - set Layout contraints

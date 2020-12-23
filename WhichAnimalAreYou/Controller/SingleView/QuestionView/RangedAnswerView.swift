@@ -9,7 +9,7 @@ import UIKit
 
 class RangedAnswerView: UIView {
 
-    var view : UIView!{
+    weak var view : UIView!{
         didSet{
             setConstrains()
         }

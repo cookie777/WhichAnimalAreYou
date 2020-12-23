@@ -9,7 +9,7 @@ import UIKit
 
 class ResultView: UIView {
     
-    var view : UIView!{
+    weak var view : UIView!{
         didSet{
             setConstrains()
         }
