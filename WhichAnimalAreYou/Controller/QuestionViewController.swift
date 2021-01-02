@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QuestionViewController: UIViewController {
+class QuestionViewController: UIViewController{
   
   
     /*
@@ -37,6 +37,7 @@ class QuestionViewController: UIViewController {
         singleAnswerView.view = view
         singleAnswerView.buttons.forEach {$0.addTarget(self, action: #selector(singleAnswerBottonPressed), for: .touchUpInside)}
 
+
         multiAnswerView.view = view
         multiAnswerView.answerButton.addTarget(self, action: #selector(multiAnswerBottonPressed), for: .touchUpInside)
         
@@ -44,6 +45,7 @@ class QuestionViewController: UIViewController {
         rangedAnswerView.answerButton.addTarget(self, action: #selector(rangedAnswerBottonPressed), for: .touchUpInside)
         updateUI()
 
+        navigationController?.delegate = self
     }
   
 
@@ -51,9 +53,9 @@ class QuestionViewController: UIViewController {
     MARK: - update UI
     */
     func updateUI() {
-        singleAnswerView.stackView.isHidden = true
-        multiAnswerView.stackView.isHidden = true
-        rangedAnswerView.stackView.isHidden = true
+        singleAnswerView.isHidden = true
+        multiAnswerView.isHidden = true
+        rangedAnswerView.isHidden = true
 
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
@@ -114,5 +116,19 @@ class QuestionViewController: UIViewController {
         answerChosen.append(currentAnswers[index])
         nextQuestion()
     }
+
+
+    
+}
+
+
+extension QuestionViewController: UINavigationControllerDelegate{
+
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        print("didshow")
+    }
+
+ 
+    
 
 }

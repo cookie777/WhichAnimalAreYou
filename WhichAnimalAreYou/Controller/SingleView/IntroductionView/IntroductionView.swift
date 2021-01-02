@@ -28,7 +28,11 @@ class IntroductionView: UIView {
     lazy var mainStackView : UIStackView = VerticalStackView(arrangedSubviews: [titleLabel, startButton], spacing: 0, alignment: .center)
   
     func setCenterLabel(){
-        view.addSubview(mainStackView)
+       
+        self.addSubview(mainStackView)
+        view.addSubview(self)
+        self.matchParent()
+        
         let sa = view.safeAreaLayoutGuide
         mainStackView.anchors(
             topAnchor       : nil,

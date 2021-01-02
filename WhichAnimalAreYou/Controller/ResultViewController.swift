@@ -9,6 +9,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    
     var responses : [Answer]
     var resultView = ResultView()
     var mostCommonAnswer : AnimalType! {
@@ -21,6 +22,7 @@ class ResultViewController: UIViewController {
     init?(responses : [Answer]) {
         self.responses = responses
         super.init(nibName: nil, bundle: nil)
+        
     }
   
     required init?(coder: NSCoder) {

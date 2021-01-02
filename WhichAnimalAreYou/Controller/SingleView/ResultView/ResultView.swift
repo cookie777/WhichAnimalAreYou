@@ -22,7 +22,10 @@ class ResultView: UIView {
     
     
     func setConstrains() {
-        view.addSubview(stackView)
+        self.addSubview(stackView)
+        view.addSubview(self)
+        self.matchParent()
+        
         let sa = view.safeAreaLayoutGuide
         stackView.anchors(
             topAnchor: nil,

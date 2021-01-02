@@ -22,7 +22,11 @@ class SingleAnswerView: UIView {
     lazy var stackView = VerticalStackView(arrangedSubviews: buttons, spacing: 20, alignment: .center)
 
     func setConstrains() {
-        view.addSubview(stackView)
+        
+        view.addSubview(self)
+        self.addSubview(stackView)
+        self.matchParent()
+        
         let sa = view.safeAreaLayoutGuide
         stackView.anchors(
             topAnchor: nil,
@@ -35,7 +39,7 @@ class SingleAnswerView: UIView {
     }
     
     func updateSingleLayout(using answers: [Answer]) {
-        stackView.isHidden = false
+        self.isHidden = false
         for (i, bt) in buttons.enumerated(){
             bt.setTitle(answers[i].text, for: .normal)
         }

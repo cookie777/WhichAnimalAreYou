@@ -47,7 +47,10 @@ class MultiAnswerView: UIView {
     lazy var stackView = VerticalStackView(arrangedSubviews: pairs+[answerButton], spacing: 20)
     
     func setConstrains(){
-        view.addSubview(stackView)
+        self.addSubview(stackView)
+        view.addSubview(self)
+        self.matchParent()
+        
         let sa = view.safeAreaLayoutGuide
         stackView.anchors(
             topAnchor: nil,
@@ -60,7 +63,7 @@ class MultiAnswerView: UIView {
     }
     
     func updateMultiLayout(using answers: [Answer]) {
-        stackView.isHidden = false
+        self.isHidden = false
         for sw in switches{
           sw.isOn = false // initialize switch to all off
         }

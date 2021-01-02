@@ -36,7 +36,10 @@ class RangedAnswerView: UIView {
     )
     
     func setConstrains(){
-        view.addSubview(stackView)
+        self.addSubview(stackView)
+        view.addSubview(self)
+        self.matchParent()
+        
         let sa = view.safeAreaLayoutGuide
         stackView.anchors(
             topAnchor: nil,
@@ -49,7 +52,7 @@ class RangedAnswerView: UIView {
     }
     
     func updateRangeLayout(using answers: [Answer]) {
-        self.stackView.isHidden = false
+        self.isHidden = false
         self.slider.setValue(0.5, animated: false) // initialize slider to center
         self.lables[0].text = answers.first?.text
         self.lables[1].text = answers.last?.text
